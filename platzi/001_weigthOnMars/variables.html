@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weight in other planets</title>
+  </head>
+  <body>
+    <h1>Your weight in other planets</h1>
+    <p> The weight is given by mass * gravitational acceleration.
+        In the earth planet
+        g is constant g = 9.8 m/s^2</p>
+    <p> What would be your weith on Mars?</p>
+    <script>
+    var userWeight = prompt("What is your weight?");
+    var weigthOnEarth = parseFloat(userWeight);
+    const GRAVITY_ON_EARTH = 9.8; // m/s^2
+    const GRAVITY_ON_MARS = 3.7;
+
+    var weightOnMars = parseInt(weigthOnEarth * GRAVITY_ON_MARS / GRAVITY_ON_EARTH);
+    var string = "Your weight on Mars is <strong>" + weightOnMars + " kg.</strong>";
+    document.write(string);
+    </script>
+  </body>
+</html>
