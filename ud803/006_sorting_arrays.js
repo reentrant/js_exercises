@@ -26,7 +26,7 @@ function sortArray(array) {
 **/
 function getSecondLargest(nums) {
     let second;
-    nums.sort((x, y) => x < y);  // same than: nums.sort(function(x, y) { return x < y; } );
+    nums.sort(function(x, y) { return x < y; } ); // nums.sort((x, y) => x < y);
     const max = nums[0];
     for (let element of nums) {
         if (element < max) {
