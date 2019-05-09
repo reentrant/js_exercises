@@ -4,18 +4,16 @@
  */
 
  function getMaxLessThanK(n, k) {
-     var and_result;
      let max = 0;
-     let m = n;
-     for (let i = (k - 2 <= 0 ? 1 : k - 1); i < k; i++) {
-         for (var j = m; j > 1; j--) {
-             if ((i & j) < k && (i & j) > max) {
+     for (let i = 1; i < n; i++)
+      for (let j = i + 1; j < n + 1; j++){
+        if ((i & j) < k && (i & j) > max) {
                  max = i & j;
-             }
-         }
-         m--;
-     }
+        }
+        console.log(i, j, i & j);
+      }
      return max;
  }
 
-console.log(getMaxLessThanK(955, 236));
+console.log(getMaxLessThanK(5, 4));
+//console.log(getMaxLessThanK(712, 704));
