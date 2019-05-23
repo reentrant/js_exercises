@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <style>
+            body {
+                text-align: center;
+            }
+            /* Styling for the 'button' class */
+            .buttonClass  {
+                background-color: #4FFF8F;
+                color: #0000ff;
+            }
+            /* Styling for id='htmlButton1' */
+            #htmlButton1 {
+                font-weight: bold;
+            }
+            /* Styling for id='htmlButton2' */
+            #htmlButton2 {
+                font-style: italic;
+            }
+            /* Styling for id='jsButton' */
+            #jsButton {
+                font-weight: bold;
+                font-style: italic;
+            }
+        </style>
+        <!-- Link to the style sheet in the 'head' section -->
+        <link rel="stylesheet" href="css-file-path" type="text/css">
+    </head>
+
+    <body>
+        <!-- Link to the JS code in the 'body' section -->
+
+        <h1> HTML Buttons </h1>
+          <!-- id: the button's unique identifier within the page -->
+          <!-- class: the CSS class(es) used to style the button -->
+          <button id='htmlButton1' class='buttonClass'>I'm an HTML button!</button>
+          <button id='htmlButton2' class='buttonClass'>I'm an HTML button!</button>
+        <h1> JavaScript Buttons </h1>
+          <script>
+          /* Create a button element */
+              var clickMeButton = document.createElement('button');
+              /* Set the button's text label */
+              clickMeButton.innerHTML = 'I\'m a JavaScript button!';
+              /* Set the button's id */
+              clickMeButton.id = 'jsButton';
+              /* Set the button's style class */
+              clickMeButton.className = 'buttonClass';
+              /* Add the button to the page */
+              document.body.appendChild(clickMeButton);
+          </script>
+
+         <script>
+         let number = 0;
+          // Using onclick
+           var hButton = document.getElementById('htmlButton2');
+           hButton.innerHTML = 'I\'m a modified HTML button!';
+           hButton.onclick = function(){
+
+             hButton.innerHTML = 'You clicked me!';
+           }
+           // Using addEventListener
+           let jButton = document.getElementById('jsButton');
+           jButton.addEventListener("click", function() {
+             jButton.innerHTML = 'You clicked me!';
+           });
+          </script>
+    </body>
+</html>

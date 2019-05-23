@@ -1,0 +1,16 @@
+body {
+                text-align: center;
+            }
+            /* Styling for the 'button' class */
+            .buttonClass  {
+                background-color: #4FFF8F;
+                color: #0000ff;
+                width: 96;
+                height: 48;
+            }
+
+            #btn {
+                font-weight: bold;
+                font-style: italic;
+                font-size: 24;
+            }
