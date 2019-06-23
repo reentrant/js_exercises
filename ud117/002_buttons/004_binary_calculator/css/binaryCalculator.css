@@ -1,0 +1,55 @@
+/* Styling.
+The document's elements must have the following styles:
+*/
+/* body has a width of 33%. */
+body {
+    width: 33%;
+    background: gray;
+}
+
+/* res has a background-color of lightgray, a border that is solid, a height of 48px,
+and a font-size of 20px. */
+.res{
+  height: 48px;
+  color: #2299f7;
+  background: lightgray;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+}
+
+
+.second_row {
+  display: flex;
+  box-sizing:  border-box;
+}
+/* All the buttons in btns have a width of 25%, a height of 36px, a font-size of 18px, margin
+of 0px, and float value left. */
+
+button {
+  width: 25%;
+  height: 36%;
+  font-size: 18px;
+  margin: 0px;
+  float: left;
+}
+
+/* btn0 and btn1 have a background-color of lightgreen and a color of brown. */
+.numbers{
+  background-color: lightgreen;
+  color: brown;
+
+}
+
+/* btnClr and btnEql have a background-color of darkgreen and a color of white. */
+ .clear-set {
+  background-color: darkgreen;
+  color: white;
+
+}
+
+/* btnSum, btnSub, btnMul, and btnDiv have a background-color of black, a color of red. */
+ .operations {
+  background-color: black;
+  color: red;
+}
