@@ -55,11 +55,18 @@ console.log('Method \'o.foo()\':', o.foo());
 
 /*
  * 2. Using a Constructor Function
+
  * We can use a constructor function to create an object in two steps:
  *
  * 1) Define the object type by writing a constructor function.
  *    The strong convention here is for the function's name to be in UpperCamelCase.
  * 2) Use the new operator to create an instance of the object.
+
+ * Example:
+ function Car() {}
+ var Car = function() {}
+ var car1 = new Car();
+
  */
 
  function Rectangle(a, b) {
